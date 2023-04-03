@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ChatCtl : MonoBehaviour
 {
-    float scroll = 0,move = 0,now = 0;
+    float scroll = 0,move = 0,now = 0,speed = 1;
     Transform pos1, pos2, pos3, pos4,pos5,pos6;
     Transform [] pos;
     void Start()
@@ -28,23 +28,16 @@ public class ChatCtl : MonoBehaviour
                 moveUp();
             }
         }
-        if (now == 0)
+        if (now == 1)
         {
-            pos1.localScale = new Vector3(0, 0, 0);
+            float step = speed * Time.deltaTime;
+           pos1.position = Vector3.MoveTowards(gameObject.transform.localPosition, new Vector3(0,1.5f, 0), step);
+            /*pos1.localScale = new Vector3(0, 0, 0);
             pos2.localScale = new Vector3(0, 0, 0);
             pos3.localScale = new Vector3(0, 0, 0);
             pos4.localScale = new Vector3(0, 0, 0);
             pos5.localScale = new Vector3(0, 0, 0);
-            pos6.localScale = new Vector3(0, 0, 0);
-        }
-        else if (now == 1)
-        {
-            pos1.localScale = new Vector3(1, 1, 0);
-            pos2.localScale = new Vector3(0, 0, 0);
-            pos3.localScale = new Vector3(0, 0, 0);
-            pos4.localScale = new Vector3(0, 0, 0);
-            pos5.localScale = new Vector3(0, 0, 0);
-            pos6.localScale = new Vector3(0, 0, 0);
+            pos6.localScale = new Vector3(0, 0, 0);*/
         }
         else if (now == 2)
         {
