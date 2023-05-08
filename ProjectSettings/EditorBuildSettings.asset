@@ -6,15 +6,33 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Start.unity
+    path: Assets/FineArt/Scenes/Start.unity
     guid: 88ee3b92940794547a083d1b921fed9d
   - enabled: 1
-    path: Assets/Scenes/Guide.unity
+    path: Assets/FineArt/Scenes/Guide.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Chat.unity
+    path: Assets/FineArt/Scenes/Chat.unity
     guid: d13951eddd172504dbd37d01466dd54c
   - enabled: 1
-    path: Assets/Scenes/Dressing.unity
+    path: Assets/FineArt/Scenes/Dressing.unity
     guid: 9a44763465e73684f800977320cd6379
+  - enabled: 1
+    path: Assets/FineArt/Scenes/Cooking.unity
+    guid: 3a371f69d548351408896d8525c25758
+  - enabled: 1
+    path: Assets/FineArt/Scenes/Chat 2.unity
+    guid: 6f14c6a89ba1f19409d4bf992e6f2631
+  - enabled: 1
+    path: Assets/FineArt/Scenes/Chat 1.unity
+    guid: 7c8b6070bf481fa43adab2f9f3d2cf00
+  - enabled: 1
+    path: Assets/FineArt/Scenes/Restroom.unity
+    guid: 40025343110bc734a890678e20c8369b
+  - enabled: 1
+    path: Assets/FineArt/Scenes/Competition.unity
+    guid: 41b4f959bbcb1ae42a52bca663a2afdc
+  - enabled: 1
+    path: Assets/FineArt/Scenes/Win.unity
+    guid: cfc6820f79c93ca4090461cb3625e598
   m_configObjects: {}

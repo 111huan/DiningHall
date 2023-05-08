@@ -3,7 +3,37 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Oven
+  - food
+  - dicedMeat
+  - Bowl
+  - bakedMeat
+  - vg
+  - dicedVg
+  - fr
+  - meatInBowl
+  - rawMeat
+  - meatInPlate
+  - boiledVg
+  - boiledMeat
+  - bakedMr
+  - mrInPlate
+  - vgInBowl
+  - trashCan
+  - dicedMr
+  - frInBowl
+  - boiledMr
+  - customer
+  - vgInPlate
+  - boiledFr
+  - mrInBowl
+  - mr
+  - door
+  - vessel
+  - mr2
+  - bakedMr2
+  - plate
   layers:
   - Default
   - TransparentFX

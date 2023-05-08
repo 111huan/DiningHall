@@ -6,25 +6,17 @@ using UnityEngine.UI;
 public class GenderCtl : MonoBehaviour
 {
     Toggle tg;
-    public GameObject body, body1;
+    [SerializeField] GameObject body, body1;
     // Start is called before the first frame update
-    void Start()
-    {
-        tg = GetComponent<Toggle>();
-    }
 
-    // Update is called once per frame
-    void Update()
+    public void female()
     {
-        if (tg.isOn)
-        {
-            body.transform.localScale = new Vector3(0, 0, 0);
-            body1.transform.localScale = new Vector3(1, 1, 1);
-        }
-        else
-        {
-            body1.transform.localScale = new Vector3(0, 0, 0);
-            body.transform.localScale = new Vector3(1, 1, 1);
-        }
+        body1.transform.localScale = new Vector3(0, 0, 0);
+        body.transform.localScale = new Vector3(1, 1, 1);
+    }
+    public void male()
+    {
+        body.transform.localScale = new Vector3(0, 0, 0);
+        body1.transform.localScale = new Vector3(1, 1, 1);
     }
 }

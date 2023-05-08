@@ -8,11 +8,15 @@ public class BackHairCtl : MonoBehaviour
     Slider slider;
     float sliderValue;
     public GameObject bh1,bh2,bh3,bh4,bh5,bh6,bh7;
+    [SerializeField] GameObject obj;
     // Start is called before the first frame update
     void Start()
     {
         slider = GetComponent<Slider>();
+
+
     }
+
 
     // Update is called once per frame
     void Update()
