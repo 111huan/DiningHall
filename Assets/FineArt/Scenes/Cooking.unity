@@ -514,7 +514,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 30
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 10b0416a653360349aa0964f663f5f8e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2929,6 +2929,7 @@ GameObject:
   - component: {fileID: 215430534}
   - component: {fileID: 215430536}
   - component: {fileID: 215430537}
+  - component: {fileID: 215430538}
   m_Layer: 0
   m_Name: "\u6C64\u78971"
   m_TagString: vessel
@@ -3056,6 +3057,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &215430538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215430533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e451aaee0b6be5247b9bc8d482170bdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &221124280
 GameObject:
   m_ObjectHideFlags: 0
@@ -7754,6 +7767,7 @@ GameObject:
   - component: {fileID: 442105242}
   - component: {fileID: 442105243}
   - component: {fileID: 442105244}
+  - component: {fileID: 442105245}
   m_Layer: 0
   m_Name: "\u70E7\u70E4\u7897\u4E0A"
   m_TagString: vessel
@@ -7879,6 +7893,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &442105245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442105240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e451aaee0b6be5247b9bc8d482170bdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &442571891
 GameObject:
   m_ObjectHideFlags: 0
@@ -12531,7 +12557,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.2110157, y: -0.13850379}
@@ -16429,7 +16455,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 31
+  m_SortingOrder: 11
   m_Sprite: {fileID: 21300000, guid: f5c6a77fdddf983498be86f39a5c0cb1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -16788,6 +16814,7 @@ GameObject:
   - component: {fileID: 941774540}
   - component: {fileID: 941774542}
   - component: {fileID: 941774543}
+  - component: {fileID: 941774544}
   m_Layer: 0
   m_Name: "\u70E7\u70E4\u7897\u4E0A (1)"
   m_TagString: vessel
@@ -16913,6 +16940,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &941774544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941774539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e451aaee0b6be5247b9bc8d482170bdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &963333092
 GameObject:
   m_ObjectHideFlags: 0
@@ -35281,6 +35320,7 @@ GameObject:
   - component: {fileID: 2125693105}
   - component: {fileID: 2125693104}
   - component: {fileID: 2125693108}
+  - component: {fileID: 2125693109}
   m_Layer: 0
   m_Name: "\u6C64\u78971 (1)"
   m_TagString: vessel
@@ -35408,6 +35448,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2125693109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125693103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e451aaee0b6be5247b9bc8d482170bdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2131288420
 GameObject:
   m_ObjectHideFlags: 0

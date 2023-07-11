@@ -227,7 +227,7 @@ public class CookingPlot : MonoBehaviour
             man.position = Vector3.MoveTowards(man.position, new Vector3(-20f, man.position.y, 0), step);
             if (man.position.x <= -19.9f)
             {
-                order++;
+                //order++;
             }
         }
     }

@@ -158,6 +158,8 @@ MonoBehaviour:
   des: {fileID: 0}
   data: {fileID: 0}
   slider: {fileID: 0}
+  beau: {fileID: 0}
+  full: {fileID: 0}
   colorStart: {r: 1, g: 1, b: 1, a: 1}
   colorEnd: {r: 1, g: 1, b: 1, a: 1}
   neighbor: []
@@ -167,6 +169,9 @@ MonoBehaviour:
   flavor: 0
   time: 0
   colorChangable: 0
+  ready: 0
+  clickable: 0
+  wait4Release: 0
   isOn: 0
 --- !u!50 &18708958
 Rigidbody2D:
@@ -873,6 +878,8 @@ MonoBehaviour:
   des: {fileID: 0}
   data: {fileID: 0}
   slider: {fileID: 0}
+  beau: {fileID: 0}
+  full: {fileID: 0}
   colorStart: {r: 1, g: 1, b: 1, a: 1}
   colorEnd: {r: 1, g: 1, b: 1, a: 1}
   neighbor: []
@@ -882,6 +889,9 @@ MonoBehaviour:
   flavor: 0
   time: 0
   colorChangable: 0
+  ready: 0
+  clickable: 0
+  wait4Release: 0
   isOn: 1
 --- !u!212 &310308690
 SpriteRenderer:
@@ -1339,6 +1349,7 @@ GameObject:
   - component: {fileID: 519420029}
   - component: {fileID: 519420033}
   - component: {fileID: 519420034}
+  - component: {fileID: 519420035}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1441,6 +1452,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obj1: {fileID: 2033950138}
   obj2: {fileID: 1632415434}
+--- !u!114 &519420035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 316c93c8c52de0e44a9d490f975dfd77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meat1: {fileID: 310308686}
+  meat2: {fileID: 18708956}
+  meat3: {fileID: 2011337192}
+  bowl: {fileID: 1091317120}
+  plat: {fileID: 1548074127}
+  pot: {fileID: 344073649}
 --- !u!1 &529377703
 GameObject:
   m_ObjectHideFlags: 0
@@ -2894,6 +2923,8 @@ MonoBehaviour:
   des: {fileID: 0}
   data: {fileID: 0}
   slider: {fileID: 0}
+  beau: {fileID: 0}
+  full: {fileID: 0}
   colorStart: {r: 1, g: 1, b: 1, a: 1}
   colorEnd: {r: 0.7830189, g: 0.5390072, b: 0.30779037, a: 1}
   neighbor: []
@@ -2903,6 +2934,9 @@ MonoBehaviour:
   flavor: 0
   time: 0
   colorChangable: 1
+  ready: 0
+  clickable: 0
+  wait4Release: 0
   isOn: 0
 --- !u!61 &1405505161
 BoxCollider2D:
@@ -3390,6 +3424,8 @@ MonoBehaviour:
   des: {fileID: 0}
   data: {fileID: 0}
   slider: {fileID: 0}
+  beau: {fileID: 0}
+  full: {fileID: 0}
   colorStart: {r: 1, g: 1, b: 1, a: 1}
   colorEnd: {r: 0, g: 0, b: 0, a: 0}
   neighbor: []
@@ -3399,6 +3435,9 @@ MonoBehaviour:
   flavor: 0
   time: 0
   colorChangable: 0
+  ready: 0
+  clickable: 0
+  wait4Release: 0
   isOn: 0
 --- !u!50 &1632415437
 Rigidbody2D:
@@ -3937,6 +3976,8 @@ MonoBehaviour:
   des: {fileID: 0}
   data: {fileID: 0}
   slider: {fileID: 1082839876}
+  beau: {fileID: 0}
+  full: {fileID: 0}
   colorStart: {r: 1, g: 0.83647794, b: 0.83647794, a: 1}
   colorEnd: {r: 1, g: 1, b: 1, a: 1}
   neighbor: []
@@ -3946,6 +3987,9 @@ MonoBehaviour:
   flavor: 0
   time: 0
   colorChangable: 1
+  ready: 0
+  clickable: 0
+  wait4Release: 0
   isOn: 0
 --- !u!61 &2011337195
 BoxCollider2D:
@@ -4161,6 +4205,8 @@ MonoBehaviour:
   des: {fileID: 0}
   data: {fileID: 0}
   slider: {fileID: 0}
+  beau: {fileID: 0}
+  full: {fileID: 0}
   colorStart: {r: 1, g: 1, b: 1, a: 0}
   colorEnd: {r: 1, g: 1, b: 1, a: 0}
   neighbor: []
@@ -4170,6 +4216,9 @@ MonoBehaviour:
   flavor: 0
   time: 0
   colorChangable: 0
+  ready: 0
+  clickable: 0
+  wait4Release: 0
   isOn: 0
 --- !u!50 &2033950141
 Rigidbody2D:

@@ -20,7 +20,7 @@ public class Cook : MonoBehaviour
     int order = 0, parentOrder = 0;
     int[] sisOrder;
     string next1 = null, next2 = null;
-    bool ready = false, clickable = false, wait4Release = false;
+    public bool ready = false, clickable = false, wait4Release = false, shining = false;
     [SerializeField]public bool isOn = false;//用来控制烤煮切显形，isOn则透明度为1，否则为0，不能进行拖动
     Vector3 screenPosition, mousePositionOnScreen, mousePositionInWorld, defaultPosition, dfFull, dfBeau, dfData, dfDataPos;
     float duration = 15f;
@@ -157,7 +157,7 @@ public class Cook : MonoBehaviour
             if (isOn)
             {              
                 gameObject.layer = 0;
-                if (name != "bakedMr3")
+                if (name != "bakedMr3"&& !ready)
                 {
                     move();
                 }
@@ -285,6 +285,7 @@ public class Cook : MonoBehaviour
             mousePositionOnScreen.z = screenPosition.z;//将相机中的坐标转化为世界坐标
             mousePositionInWorld = Camera.main.ScreenToWorldPoint(mousePositionOnScreen);
             transform.position = mousePositionInWorld;//物体跟随鼠标移动
+            shining = true;
             gameObject.GetComponent<SpriteRenderer>().sortingOrder += 30;
         }
         else
@@ -292,6 +293,7 @@ public class Cook : MonoBehaviour
             gameObject.GetComponent<SpriteRenderer>().sortingOrder = order;
             transform.position = defaultPosition;
             clickable = false;
+            shining = false;
         }
     }
 
@@ -353,6 +355,19 @@ public class Cook : MonoBehaviour
             mark++;
             slider.value = 1f;
             slider.transform.position = new Vector3(-1000, -1000, 0);
+        }
+        if(other.gameObject.tag == "customer"&&(next1 == "customer" || next2 == "customer"))
+        {
+            isOn = false;
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if(other.gameObject.tag == "vessel")
+        {
+            ready = true;
+
         }
     }
 
